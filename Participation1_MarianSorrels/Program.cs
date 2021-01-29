@@ -36,9 +36,9 @@ namespace Participation1_MarianSorrels
             {
                 string line = lines[i];
                 var pieces = line.Split(',');
-                int id = Convert.ToInt(pieces[0]);
+                int id = (int)Convert.ToInt64(pieces[0]);
 
-                Student currentStudent =   new Student(Convert.ToInt32)
+                Student currentStudent = new Student(Convert.ToInt64(ID), ;
             }
 
             PrintStudentswithFavoriteColor("Blue"); ;

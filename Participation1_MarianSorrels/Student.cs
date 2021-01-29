@@ -10,7 +10,7 @@ namespace Participation1_MarianSorrels
         // + means public - private
         //put get and set in curly brackets for public 
 
-        public int ID { get; set; }
+        public int64 ID { get; set; }
 
         public string FirstName { get; set; }
 
@@ -45,7 +45,7 @@ namespace Participation1_MarianSorrels
         /// <param name="first"></param>
         /// <param name="last"></param>
         /// <param name="color"></param>
-        public Student(int id, string first, string last, string color)
+        public Student(int64 id, string first, string last, string color)
         {
             // the thing you want to change has to be on the left side, you can't put the lowercase stuff on the left side
             //or you're only changing the lowercase id
@@ -56,7 +56,7 @@ namespace Participation1_MarianSorrels
         }
 
 
-        public Student(int id) : this()
+        public Student(int64 id) : this()
         {
             ID = id;
             //this() is calling back the default/empty constructor
