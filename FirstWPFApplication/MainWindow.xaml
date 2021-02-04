@@ -15,8 +15,7 @@
         <TextBox x:Name="txbBirthdate" HorizontalAlignment="Left" Margin="238,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblAge" Content="Enter your Birth Date:" HorizontalAlignment="Left" Margin="93,195,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.569,0.007" FontFamily="Comic Sans MS"/>
         <Label x:Name="lblName" Content="Enter your name:" HorizontalAlignment="Left" Margin="127,157,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
-        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="167,248,0,0" VerticalAlignment="Top" Click="Calculate_Click" RenderTransformOrigin="0.175,-0.004" Background="#FF1605F8" MouseEnter="Calculate_MouseEnter" Foreground="#FFEFE8E8" Height="63" Width="211" FontFamily="Comic Sans MS" FontSize="30"/>
-        <Label x:Name="lblmsg" Content="" HorizontalAlignment="Left" Margin="133,285,0,0" VerticalAlignment="Top" Background="White" FontWeight="Bold"/>
+        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="220,248,0,0" VerticalAlignment="Top" Click="Calculate_Click" RenderTransformOrigin="0.175,-0.004" Background="#FF1605F8" MouseEnter="Calculate_MouseEnter" Foreground="#FFEFE8E8" Height="50" Width="156" FontFamily="Comic Sans MS" FontSize="30"/>
 
     </Grid>
 </Window>

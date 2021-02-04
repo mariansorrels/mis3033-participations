@@ -36,9 +36,9 @@ namespace FirstWPFApplication
             double ageinyears = Age.Days / 365;
             //Convert.ToString(ageinyears);
 
-            MessageBox.Show($"{naem}, your age is {ageinyears.ToString("N2")}");
+            MessageBox.Show($"{naem}, your age is {ageinyears.ToString("N2")}! You're an old banana!");
             //MessageBox.Show($"{naem}, your age is {ageinyears}");
-            //lblmsg.Content = $"{naem}, your age is {ageinyears}! You're an old banana!";
+            
             Environment.Exit(0);
         }
 
