@@ -32,10 +32,11 @@ namespace FirstWPFApplication
             string naem = txbName.Text;
             DateTime BirthDate = Convert.ToDateTime(txbe);
             TimeSpan Age = DateTime.Now - BirthDate;
-            TimeSpan ageinyears = Age / 365;
-            Convert.ToString(ageinyears);
+            //TimeSpan ageinyears = Age / 365;
+            double ageinyears = Age.Days / 365;
+            //Convert.ToString(ageinyears);
 
-            //MessageBox.Show($"{naem}, your age is {ageinyears.ToString("N2")}");
+            MessageBox.Show($"{naem}, your age is {ageinyears.ToString("N2")}");
             //MessageBox.Show($"{naem}, your age is {ageinyears}");
             //lblmsg.Content = $"{naem}, your age is {ageinyears}! You're an old banana!";
             Environment.Exit(0);
