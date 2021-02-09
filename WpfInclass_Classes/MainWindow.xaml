@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnSubmit" Content="Add Pet" HorizontalAlignment="Left" Margin="60,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="65" Width="140" Click="btnSubmit_Click">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.muralswallpaper.com/app/uploads/Blue-Bulldog-and-Sausage-Dog-Pattern-Pet-Wallpaper-Mural-Plain-820x532.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btnSubmit" Content="Add Pet" HorizontalAlignment="Left" Margin="132,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="65" Width="140" Click="btnSubmit_Click" Background="#FF6C72E9" FontWeight="Bold" Foreground="#FFF8EBEB">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,13 +20,17 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="126,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="126,112,0,0" VerticalAlignment="Top" Background="#FFF7F6F6"/>
         <TextBox x:Name="txbName" HorizontalAlignment="Left" Margin="183,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblBreed" Content="Breed" HorizontalAlignment="Left" Margin="126,146,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBreed" Content="Breed" HorizontalAlignment="Left" Margin="126,146,0,0" VerticalAlignment="Top" Background="#FFFEFEFE"/>
         <TextBox x:Name="txbBreed" HorizontalAlignment="Left" Margin="183,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblURL" Content="Picture URL" HorizontalAlignment="Left" Margin="100,178,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txbURL" HorizontalAlignment="Left" Margin="183,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="lstPets" Margin="577,55,55,71" SelectionChanged="lstPets_SelectionChanged"/>
+        <Label x:Name="lblURL" Content="Picture URL" HorizontalAlignment="Left" Margin="96,180,0,0" VerticalAlignment="Top" Background="#FFFBF3F3"/>
+        <TextBox x:Name="txbURL" HorizontalAlignment="Left" Margin="183,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="lstPets" Margin="577,55,55,71" SelectionChanged="lstPets_SelectionChanged">
+            <ListBox.Background>
+                <ImageBrush ImageSource="https://previews.123rf.com/images/lyusaren/lyusaren1908/lyusaren190800032/128026194-horizontal-stripes-pattern-seamless-pattern-of-black-and-white-colors-of-small-repetitive-strips-lin.jpg"/>
+            </ListBox.Background>
+        </ListBox>
         <Image x:Name="imgPet" HorizontalAlignment="Left" Height="219" Margin="326,97,0,0" VerticalAlignment="Top" Width="212"/>
 
     </Grid>
