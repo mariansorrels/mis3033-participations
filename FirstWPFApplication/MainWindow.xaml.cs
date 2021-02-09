@@ -20,9 +20,14 @@ namespace FirstWPFApplication
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        //Brush bg;
         public MainWindow()
         {
             InitializeComponent();
+           //bg = wndMain.Background;
+           //above is supposed to be a way to change the background color w code
+
         }
 
         private void Calculate_Click(object sender, RoutedEventArgs e)
