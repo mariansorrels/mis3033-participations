@@ -8,6 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="LP" Margin="0,102,514,0">
         <ListBox x:Name="lstPokemon" MouseDoubleClick="lstPokemon_MouseDoubleClick"/>
+        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="318,0,0,0" VerticalAlignment="Top" Height="47" RenderTransformOrigin="0.5,0.5" Width="86">
+ 
 
     </Grid>
 </Window>

@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace JSON_Participation_Pokemon
+namespace NewPokemonAPI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,7 +25,6 @@ namespace JSON_Participation_Pokemon
         public MainWindow()
         {
             InitializeComponent();
-
             pokeapi api;
             string url = "https://pokeapi.co/api/v2/pokemon?offset=20&limit=1200";
 
@@ -43,9 +42,11 @@ namespace JSON_Participation_Pokemon
 
         }
 
-        private void lstPokemon_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void lstPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            var selectedCharacter = (ResultObject)lstPokemon.SelectedItem;
+            txtHeight = selectedCharacter.Height;
+            txtWeight = selectedCharacter.Weight;
         }
     }
 }

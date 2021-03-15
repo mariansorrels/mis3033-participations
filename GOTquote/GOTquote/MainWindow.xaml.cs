@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace JSON_Participation_Pokemon
+namespace GOTquote
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,26 +25,21 @@ namespace JSON_Participation_Pokemon
         public MainWindow()
         {
             InitializeComponent();
+            
 
-            pokeapi api;
-            string url = "https://pokeapi.co/api/v2/pokemon?offset=20&limit=1200";
+            
+        }
 
+        private void btngetquote_Click(object sender, RoutedEventArgs e)
+        {
+            GOTAPI api;
+            string url = "https://got-quotes.herokuapp.com/quotes";
             using (var client = new HttpClient())
             {
                 string json = client.GetStringAsync(url).Result;
-                api = JsonConvert.DeserializeObject<pokeapi>(json);
-
+                api = JsonConvert.DeserializeObject<GOTAPI>(json);
+                lblquote.Content = api;
             }
-            foreach (var item in api.results.OrderBy(x => x.Name).ToList())
-
-            {
-                lstPokemon.Items.Add(item);
-            }
-
-        }
-
-        private void lstPokemon_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
 
         }
     }
